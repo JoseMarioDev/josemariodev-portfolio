@@ -1,0 +1,22 @@
+// ************
+// About Me 
+// ************
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.styled__link {
+  text-decoration: none;
+  color: $clr-accent;
+  font-weight: $fw-bold;
+}
+.styled__link:hover {
+  text-decoration: underline;
+}
+
+.styled__link:hover {
+  opacity: 0.7;
+}
+

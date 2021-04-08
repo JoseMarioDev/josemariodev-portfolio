@@ -1,21 +1,9 @@
 @import 'config';
+@import 'mixins';
+@import 'header';
+@import 'services';
+@import 'about';
 @import 'menu';
-
 @import 'portfolio';
-
-body {
-  background: $clr-light;
-  color: $clr-dark;
-  margin: 0;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-@import 'mobile';
+@import 'footer';
+@import 'media';
