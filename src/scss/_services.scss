@@ -1,0 +1,56 @@
+// ************
+// Services
+// ************
+
+.my-services {
+  background-color: $clr-dark;
+  background-image: url('../assets/services-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url('../assets/services-bg.jpg');
+  background-size: cover;
+
+  color: $clr-light;
+  text-align: center;
+}
+
+.section__title--services {
+  color: $clr-accent;
+  position: relative;
+}
+
+.section__title--services::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: $clr-light;
+  city: 0.2;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.service-icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-icons li p {
+  margin: 0;
+}
+
+.service-icons li {
+  margin-right: 1rem;
+}
+.service-icons li:last-of-type {
+  margin: 0;
+}
