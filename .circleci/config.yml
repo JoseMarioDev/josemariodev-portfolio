@@ -154,26 +154,26 @@ jobs:
   #           else
   #             aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_DEV_BUCKET} --delete
   #           fi
-    deploy-to-aws-s3:
-    executor: app-executor
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ./
-      - *show-current-branch-name
-      - *install-aws-cli
-      - *build-project
-      - run:
-          name: Deploy to AWS S3
-          command: |
-            AWS_BUCKET_NAME=$(cat artifacts/josemariodev_portfolio_bucket_name.txt | sed 's/\"//g')
-            echo $AWS_BUCKET_NAME
-            if [ "${CIRCLE_BRANCH}" == "master" ]
-            then
-              aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_NAME} --delete
-            else
-              aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_NAME} --delete
-            fi
+  deploy-to-aws-s3:
+  executor: app-executor
+  steps:
+    - checkout
+    - attach_workspace:
+        at: ./
+    - *show-current-branch-name
+    - *install-aws-cli
+    - *build-project
+    - run:
+        name: Deploy to AWS S3
+        command: |
+          AWS_BUCKET_NAME=$(cat artifacts/josemariodev_portfolio_bucket_name.txt | sed 's/\"//g')
+          echo $AWS_BUCKET_NAME
+          if [ "${CIRCLE_BRANCH}" == "master" ]
+          then
+            aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_NAME} --delete
+          else
+            aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_NAME} --delete
+          fi
 
   # job to deploy to cloudfront
   # deploy-to-aws-cloudfront:
@@ -191,7 +191,7 @@ jobs:
   #           aws configure set preview.cloudfront true
   #           if [ "${CIRCLE_BRANCH}" == "master" ]
   #           then
-  #             aws cloudfront create-invalidation --distribution-id ${PRODUCTION_DISTRIBUTION_ID} --paths /\*            
+  #             aws cloudfront create-invalidation --distribution-id ${PRODUCTION_DISTRIBUTION_ID} --paths /\*
   #           else
   #             aws cloudfront create-invalidation --distribution-id ${DEV_DISTRIBUTION_ID} --paths /\*
   #           fi
