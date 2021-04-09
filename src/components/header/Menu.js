@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
 import { links, socials } from '../../data';
@@ -42,6 +43,11 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
       </ul>
     </nav>
   );
+};
+
+Menu.propTypes = {
+  toggleMenu: PropTypes.func,
+  isMenuOpen: PropTypes.bool
 };
 
 export default Menu;
