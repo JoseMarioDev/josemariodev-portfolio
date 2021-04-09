@@ -1,0 +1,199 @@
+// *******************
+// media queries
+// *******************
+
+@media (min-width: 800px) {
+  :root {
+    $fs-h1: 4.5rem;
+    $fs-h2: 3.75rem;
+    $fs-h3: 1.5rem;
+    $fs-body: 1.125rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      'img title'
+      'img subtitle';
+    grid-template-columns: min-content max-content;
+    padding-bottom: 0;
+  }
+
+  .modal-links {
+    margin: 0 auto;
+    max-width: 622px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+  }
+
+  .section__title--intro {
+    /* margin-top: 1rem; */
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
+@media (min-width: 800px) {
+  .logo {
+    max-width: 6rem;
+  }
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service {
+    margin-bottom: none;
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas:
+      'title img  '
+      'subtitle  img'
+      'text img  ';
+
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+  }
+}
+
+// Widescreens
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      display: none;
+      background: url('../assets/selfie-10.jpg');
+      background-position: contain;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
+    }
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
