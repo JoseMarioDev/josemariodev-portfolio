@@ -3,25 +3,25 @@ export const links = [
   { route: '/skills', name: 'Skills' },
   { route: '/about', name: 'About Me' },
   { route: '/portfolio', name: 'Portfolio' },
-  { route: '/contact', name: 'Resume' },
+  { route: '/contact', name: 'Resume' }
 ];
 
 export const socials = [
   {
     link: 'http://www.twitter.com/josemariodev/',
     className: 'fab fa-twitter fa-2x',
-    title: 'Twitter',
+    title: 'Twitter'
   },
   {
     link: 'http://www.linkedin.com/in/josemariodev/',
     className: 'fab fa-linkedin fa-2x',
-    title: 'LinkedIn',
+    title: 'LinkedIn'
   },
   {
     link: 'http://www.github.com/josemariodev/',
     className: 'fab fa-github fa-2x',
-    title: 'Github',
-  },
+    title: 'Github'
+  }
 ];
 
 export const about = [
@@ -37,8 +37,8 @@ export const about = [
       { skill: 'Figma' },
       { skill: 'Sketch' },
       { skill: 'Adobe XD' },
-      { skill: 'Zeplin' },
-    ],
+      { skill: 'Zeplin' }
+    ]
   },
   {
     icon: 'fas fa-code',
@@ -52,8 +52,8 @@ export const about = [
       { skill: 'VS Code' },
       { skill: 'Github' },
       { skill: 'Terminal' },
-      { skill: 'Atom' },
-    ],
+      { skill: 'Atom' }
+    ]
   },
   {
     icon: 'fas fa-users',
@@ -67,9 +67,9 @@ export const about = [
       { skill: 'Management' },
       { skill: 'Spanish' },
       { skill: 'Customer Service' },
-      { skill: 'Deadlines' },
-    ],
-  },
+      { skill: 'Deadlines' }
+    ]
+  }
 ];
 
 // export const projects = [
