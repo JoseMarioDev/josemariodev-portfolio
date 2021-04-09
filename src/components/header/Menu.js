@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { links, socials } from '../../data';
 
-import portrait from '../../assets/selfie-10.jpg';
 
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
@@ -14,13 +14,14 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
         <a href="mailto:josemariodev@gmail.com" class="nav-link"
           >josemariodev@gmail.com</a>
         <ul className='social-list'>
+
           {socials.map((social) => (
             <li className="social-list">
             <a
               className="social-list__link" 
               href={social.link}
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
               key={Math.random()}
             >
               <i className={social.className}></i>
@@ -35,7 +36,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
             className={`nav-item ${isMenuOpen ? 'show' : ''}`}
             key={Math.random()}
           >
-            <Link to={link.route} className='nav-link' onClick={toggleMenu}>
+            <Link to={link.route} className="nav-link" onClick={toggleMenu}>
               {link.name}
             </Link>
           </li>
