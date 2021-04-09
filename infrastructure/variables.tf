@@ -1,6 +1,6 @@
 variable "prefix" {
-  default = "movie-app"
+  default = "josemariodev_portfolio"
 }
 variable "project" {
-  default = "movie-react-app"
+  default = "josemariodev_portfolio-app"
 }

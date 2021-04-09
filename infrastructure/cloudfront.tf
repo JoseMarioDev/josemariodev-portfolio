@@ -10,7 +10,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       origin_protocol_policy = "https-only"
       origin_ssl_protocols   = ["TLSv1", "TLSv1.1", "TLSv1.2"]
     }
-    domain_name = aws_s3_bucket.movieapp_s3_bucket.bucket_regional_domain_name
+    domain_name = aws_s3_bucket.josemariodev_portfolio_s3_bucket.bucket_regional_domain_name
     origin_id   = "default-origin"
   }
 

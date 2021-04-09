@@ -6,8 +6,8 @@ provider "aws" {
 #  specify TF backend, key used to store state file
 terraform {
   backend "s3" {
-    bucket  = "movieapp-terraform-state"
-    key     = "movieapp-state.tfstate"
+    bucket  = "josemariodev_portfolio-terraform-state"
+    key     = "josemariodev_portfolio-state.tfstate"
     region  = "us-east-1"
     encrypt = true
 
