@@ -10,7 +10,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
         <div className="portrait"></div>
-        <a href="mailto:josemariodev@gmail.com" className="nav-link">
+        <a href="mailto:josemariodev@gmail.com" className="nav-link nav-link__email">
           josemariodev@gmail.com
         </a>
         <ul className="social-list">
