@@ -2,7 +2,7 @@
 # S3 resources
 #################
 
-resource "aws_s3_bucket" "movieapp_s3_bucket" {
+resource "aws_s3_bucket" "josemariodev_portfolio_s3_bucket" {
   bucket        = local.prefix
   acl           = "public-read"
   force_destroy = true
