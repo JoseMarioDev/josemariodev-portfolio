@@ -10,11 +10,14 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
         <div className='portrait'>
-          <img src={portrait} alt='Jose Mario' />
         </div>
-        <div className='icons'>
+        <a href="mailto:josemariodev@gmail.com" class="nav-link"
+          >josemariodev@gmail.com</a>
+        <ul className='social-list'>
           {socials.map((social) => (
+            <li className="social-list">
             <a
+              className="social-list__link" 
               href={social.link}
               target='_blank'
               rel='noopener noreferrer'
@@ -22,8 +25,9 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
             >
               <i className={social.className}></i>
             </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
       <ul className={`menu-nav ${isMenuOpen ? 'show' : ''}`}>
         {links.map((link) => (
