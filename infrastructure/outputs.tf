@@ -1,5 +1,5 @@
 # outputs
-output "movieapp_bucket_name" {
+output "josemariodev_portfolio_bucket_name" {
   value = aws_s3_bucket.josemariodev_portfolio_s3_bucket.id
 }
 output "cloudfront_distribution_id" {
