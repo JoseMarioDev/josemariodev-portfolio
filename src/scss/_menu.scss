@@ -163,6 +163,10 @@
     text-decoration: none;
     // @include easeOut;
 
+    &__email {
+      text-transform: lowercase;
+    }
+
     &:hover {
       color: $secondary-color;
       opacity: 0.7;
