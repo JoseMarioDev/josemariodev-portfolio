@@ -1,5 +1,5 @@
 import React from 'react';
-import selfie from '../../assets/selfie-11.jpg';
+import selfie from '../../assets/selfie-13.png';
 const Intro = () => {
   return (
     <section className="intro" id="home">
