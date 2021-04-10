@@ -8,19 +8,19 @@ export const links = [
 
 export const socials = [
   {
-    link: 'http://www.twitter.com/josemariodev/',
-    className: 'fab fa-twitter fa-2x',
-    title: 'Twitter'
-  },
-  {
     link: 'http://www.linkedin.com/in/josemariodev/',
-    className: 'fab fa-linkedin fa-2x',
+    className: 'fab fa-linkedin',
     title: 'LinkedIn'
   },
   {
     link: 'http://www.github.com/josemariodev/',
-    className: 'fab fa-github fa-2x',
+    className: 'fab fa-github',
     title: 'Github'
+  },
+  {
+    link: 'http://www.twitter.com/josemariodev/',
+    className: 'fab fa-twitter',
+    title: 'Twitter'
   }
 ];
 
