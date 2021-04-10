@@ -10,12 +10,15 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
         <div className="portrait"></div>
-        <a href="mailto:josemariodev@gmail.com" className="nav-link nav-link__email">
+        <a
+          href="mailto:josemariodev@gmail.com"
+          className="nav-link nav-link__email"
+        >
           josemariodev@gmail.com
         </a>
         <ul className="social-list">
           {socials.map((social) => (
-            <li key={Math.random()} className="social-list">
+            <li key={Math.random()} className="social-list__item">
               <a
                 className="social-list__link"
                 href={social.link}
