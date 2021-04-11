@@ -93,17 +93,17 @@
   .logo {
     max-width: 6rem;
   }
-  .services {
+  .skills {
     display: flex;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
-  .service {
+  .skill {
     margin-bottom: none;
   }
 
-  .service + .service {
+  .skill + .skill {
     margin-left: 2em;
   }
 }
