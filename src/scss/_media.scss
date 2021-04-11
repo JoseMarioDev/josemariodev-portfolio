@@ -23,9 +23,11 @@
     justify-content: space-evenly;
     flex-direction: row;
   }
-
-  .intro__img {
+  .img-wrapper {
     grid-area: img;
+  }
+  .intro__img {
+    // grid-area: img;
     min-width: 250px;
     position: relative;
   }
@@ -43,9 +45,7 @@
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
-}
 
-@media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 300px;
