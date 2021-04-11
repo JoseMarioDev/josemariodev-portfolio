@@ -1,9 +1,6 @@
 // ************
 // Intro
 // ************
-section {
-  padding: 5em 2em;
-}
 
 #home {
   padding: 0em 2em 5em 2em;
@@ -34,11 +31,8 @@ strong {
 // Title Styles
 // ************
 
-.section__title {
-  margin: 1rem 0 0.25em 3rem;
-}
-
 .section__title--intro {
+  margin-left: 3rem;
   font-weight: $fw-reg;
 }
 .section__title--intro strong {
