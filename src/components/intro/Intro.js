@@ -10,7 +10,7 @@ const Intro = () => {
         Full-Stack Developer
       </p>
       <div className="img-wrapper">
-      <img src={selfie} alt="Jose selfie" className="intro__img" />
+        <img src={selfie} alt="Jose selfie" className="intro__img" />
       </div>
     </section>
   );
