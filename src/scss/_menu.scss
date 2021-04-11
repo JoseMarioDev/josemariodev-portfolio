@@ -1,7 +1,9 @@
 // ************
 // Menu
 // ************
-
+menu {
+  z-index: 2;
+}
 .menu-btn {
   position: fixed;
   z-index: 80;
