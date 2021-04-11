@@ -2,15 +2,6 @@
 // media queries
 // *******************
 
-@media (min-width: 800px) {
-  :root {
-    $fs-h1: 4.5rem;
-    $fs-h2: 3.75rem;
-    $fs-h3: 1.5rem;
-    $fs-body: 1.125rem;
-  }
-}
-
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -54,25 +45,6 @@
   }
 }
 
-@media (min-width: 800px) {
-  .logo {
-    max-width: 6rem;
-  }
-  .services {
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .service {
-    margin-bottom: none;
-  }
-
-  .service + .service {
-    margin-left: 2em;
-  }
-}
-
 @media (min-width: 600px) {
   .about-me {
     display: grid;
@@ -102,6 +74,37 @@
   .about-me__img {
     grid-area: img;
     position: relative;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 1.125rem;
+  }
+  .logo {
+    max-width: 6rem;
+  }
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service {
+    margin-bottom: none;
+  }
+
+  .service + .service {
+    margin-left: 2em;
   }
 }
 
