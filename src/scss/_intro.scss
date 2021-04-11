@@ -1,10 +1,20 @@
 // ************
 // Intro
 // ************
+section {
+  padding: 5em 2em;
+}
 
+#home {
+  padding: 0em 2em 5em 2em;
+}
 .intro {
   position: relative;
   padding-bottom: 2rem;
+}
+
+strong {
+  font-weight: $fw-bold;
 }
 .modal-links {
   padding: 0rem 0 5rem 0;
@@ -16,4 +26,39 @@
 
 .section__subtitle--intro {
   display: inline-block;
+}
+
+// ************
+// Title Styles
+// ************
+
+.section__title {
+  margin-top: 1rem;
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: $fw-reg;
+}
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: $fs-h3;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: $clr-accent;
+  padding: 0.25em 1em;
+  font-family: $ff-secondary;
+  margin-bottom: 1em;
+}
+
+.section__subtitle--work {
+  color: $clr-accent;
+  font-weight: $fw-bold;
+  margin-bottom: 2em;
 }
