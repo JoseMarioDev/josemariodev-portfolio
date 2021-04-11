@@ -9,7 +9,9 @@ const Intro = () => {
       <p className="section__subtitle section__subtitle--intro">
         Full-Stack Developer
       </p>
-      <img src={selfie} alt="Jose red selfie" className="intro__img" />
+      <div className="img-wrapper">
+      <img src={selfie} alt="Jose selfie" className="intro__img" />
+      </div>
     </section>
   );
 };

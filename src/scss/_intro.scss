@@ -19,7 +19,9 @@ strong {
 .modal-links {
   padding: 0rem 0 5rem 0;
 }
-
+.img-wrapper {
+  width: 120%;
+}
 .intro__img {
   box-shadow: $bs;
 }
@@ -33,8 +35,7 @@ strong {
 // ************
 
 .section__title {
-  margin-top: 1rem;
-  margin-bottom: 0.25em;
+  margin: 1rem 0 0.25em 3rem;
 }
 
 .section__title--intro {
