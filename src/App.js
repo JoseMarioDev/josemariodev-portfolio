@@ -4,6 +4,7 @@ import './scss/main.scss';
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Skills from './components/skills/Skills';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Intro />
         <Skills />
+        <About />
       </div>
     </Router>
   );
