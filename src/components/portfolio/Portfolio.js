@@ -21,12 +21,13 @@ const Portfolio = () => {
             <figcaption>
               <h2 className="portfolio-title">{item.title}</h2>
               <p className="portfolio-desc">{item.desc}</p>
+
               <Link
                 to="/portfolioItem"
                 onClick={PortfolioItem}
                 className="portfolio-link"
               >
-                Read More
+                Learn More
               </Link>
             </figcaption>
           </div>

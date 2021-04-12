@@ -3,6 +3,7 @@
 import Revitalize from './assets/portfolioItems/revitalize/revitalize.jpg';
 import MovieBase from './assets/portfolioItems/moviebase/moviebase.png';
 import Delicious from './assets/portfolioItems/delicious/delicious.png';
+
 export const links = [
   { route: '/', name: 'Home' },
   { route: '/skills', name: 'Skills' },
