@@ -1,6 +1,7 @@
 import React from 'react';
-// import PortfolioModal from './PortfolioModal';
 import { portfolioItems } from '../../data';
+import { Link } from 'react-router-dom';
+import PortfolioModal from './PortfolioModal';
 
 const Portfolio = () => {
   return (
@@ -20,11 +21,15 @@ const Portfolio = () => {
             <figcaption>
               <h2 className="portfolio-title">{item.title}</h2>
               <p className="portfolio-desc">{item.desc}</p>
-              <a href="#revitalize" className="portfolio-link">
-                More info
-              </a>
+              <Link
+                to="/modal"
+                // component={PortfolioModal}
+                onClick={PortfolioModal}
+                className="portfolio-link"
+              >
+                More Info
+              </Link>
             </figcaption>
-            {/* <PortfolioModal /> */}
           </div>
         ))}
       </div>
