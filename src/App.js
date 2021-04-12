@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header />
       <Route exact path="/" render={() => <Home />} />
-      <Route exact path="/portfolioItem" render={() => <PortfolioItem />} />
+      <Route exact path="/portfolio/:id" render={() => <PortfolioItem />} />
     </Router>
   );
 }

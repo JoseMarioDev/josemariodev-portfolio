@@ -1,7 +1,7 @@
 import React from 'react';
 import { portfolioItems } from '../../data';
 import { Link } from 'react-router-dom';
-import PortfolioItem from './PortfolioItem';
+// import PortfolioItem from './PortfolioItem';
 
 const Portfolio = () => {
   return (
@@ -21,10 +21,9 @@ const Portfolio = () => {
             <figcaption>
               <h2 className="portfolio-title">{item.title}</h2>
               <p className="portfolio-desc">{item.desc}</p>
-
               <Link
-                to="/portfolioItem"
-                onClick={PortfolioItem}
+                to={{ pathname: `/portfolio/${item.id}`, item: { item } }}
+                // onClick= {(item) => { <PortfolioItem item={item} />; }
                 className="portfolio-link"
               >
                 Learn More

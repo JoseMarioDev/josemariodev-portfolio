@@ -110,6 +110,7 @@ export const skills = [
 
 export const portfolioItems = [
   {
+    id: 'ReVitalize',
     image: `${Revitalize}`,
     title: 'ReVitalize',
     desc: 'A modern approach to building your community',
@@ -128,11 +129,13 @@ export const portfolioItems = [
     }
   },
   {
+    id: 'MovieBase',
     image: `${MovieBase}`,
     title: 'MovieBase',
     desc: 'Explore. Discover. Remember.'
   },
   {
+    id: 'Delicious',
     image: `${Delicious}`,
     title: 'Now That is delicious',
     desc: 'Good food, reviewed'

@@ -1,9 +1,25 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable indent */
 import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { portfolioItems } from '../../data';
 
-const PortfolioModal = () => {
+const PortfolioItem = (props) => {
+  console.log('props', props);
+  // const { title } = props.item;
   return (
-    <div>hello</div>
+    <h4>hello world</h4>
+
+    // <Link
+    //   to={`/portfolio/${props.item.id}`}
+    //   component={PortfolioItem}
+    //   onClick={() => {
+    //     <PortfolioItem />;
+    //   }}
+    //   className="portfolio-link"
+    // >
+    //   Learn More
+    // </Link>
     // <div className="portfolio-modal">
     //   <button className="modal-close">
     //     <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
@@ -116,4 +132,4 @@ const PortfolioModal = () => {
   );
 };
 
-export default PortfolioModal;
+export default PortfolioItem;
