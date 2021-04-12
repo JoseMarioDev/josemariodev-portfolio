@@ -3,7 +3,6 @@
 import Revitalize from './assets/portfolioItems/revitalize/revitalize.jpg';
 import MovieBase from './assets/portfolioItems/moviebase/moviebase.png';
 import Delicious from './assets/portfolioItems/delicious/delicious.png';
-import RevitalizeWalkthru from './assets/portfolioItems/revitalize/revitalize-walkthru1.gif';
 export const links = [
   { route: '/', name: 'Home' },
   { route: '/skills', name: 'Skills' },
@@ -119,7 +118,6 @@ export const portfolioItems = [
       introImg: `${Revitalize}`,
       website: 'https://revitalizecommunity.netlify.app/',
       github: 'http://www.github.com/Revitalized-Playground',
-      gif: `${RevitalizeWalkthru}`,
       purpose:
         'ReVitalize is a web application that connects vocational and trade students with experts in their field in order to collaborate on crowd-funded projects. Building owners can create projects that need rehabilitating. Students can view and apply to work on available projects. Visitors can browse and make donations to revitalize projects.',
       stack:

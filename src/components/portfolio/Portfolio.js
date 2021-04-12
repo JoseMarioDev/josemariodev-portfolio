@@ -1,7 +1,7 @@
 import React from 'react';
 import { portfolioItems } from '../../data';
 import { Link } from 'react-router-dom';
-import PortfolioModal from './PortfolioModal';
+import PortfolioItem from './PortfolioItem';
 
 const Portfolio = () => {
   return (
@@ -22,9 +22,8 @@ const Portfolio = () => {
               <h2 className="portfolio-title">{item.title}</h2>
               <p className="portfolio-desc">{item.desc}</p>
               <Link
-                to="/modal"
-                // component={PortfolioModal}
-                onClick={PortfolioModal}
+                to="/portfolioItem"
+                onClick={PortfolioItem}
                 className="portfolio-link"
               >
                 More Info
