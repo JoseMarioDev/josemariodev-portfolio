@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Skills from './components/skills/Skills';
 import About from './components/about/About';
+import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Intro />
         <Skills />
         <About />
+        <Portfolio />
       </div>
     </Router>
   );
