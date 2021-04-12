@@ -26,7 +26,7 @@ const Portfolio = () => {
                 onClick={PortfolioItem}
                 className="portfolio-link"
               >
-                More Info
+                Learn More
               </Link>
             </figcaption>
           </div>
