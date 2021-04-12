@@ -1,22 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './scss/main.scss';
+
+import PortfolioItem from './components/portfolio/PortfolioItem';
 import Header from './components/header/Header';
-import Intro from './components/intro/Intro';
-import Skills from './components/skills/Skills';
-import About from './components/about/About';
-import Portfolio from './components/portfolio/Portfolio';
+import Home from './components/home/Home';
 
 function App() {
   return (
     <Router>
-      <div>
-        <Header />
-        <Intro />
-        <Skills />
-        <About />
-        <Portfolio />
-      </div>
+      <Header />
+      <Route exact path="/" render={() => <Home />} />
+      <Route exact path="/portfolioItem" render={() => <PortfolioItem />} />
     </Router>
   );
 }

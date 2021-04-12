@@ -112,7 +112,20 @@ export const portfolioItems = [
   {
     image: `${Revitalize}`,
     title: 'ReVitalize',
-    desc: 'A modern approach to building your community'
+    desc: 'A modern approach to building your community',
+    modal: {
+      modalTitle: 'ReVitalize',
+      modalIntro: 'A modern approach to building your community',
+      introImg: `${Revitalize}`,
+      website: 'https://revitalizecommunity.netlify.app/',
+      github: 'http://www.github.com/Revitalized-Playground',
+      purpose:
+        'ReVitalize is a web application that connects vocational and trade students with experts in their field in order to collaborate on crowd-funded projects. Building owners can create projects that need rehabilitating. Students can view and apply to work on available projects. Visitors can browse and make donations to revitalize projects.',
+      stack:
+        'We used Figma to collaborate on the custom design. The front-end was built using React. For styling we used Styled Components and SASS. The back-end was built using GraphQL, Apollo, Prisma. It was stored in a Docker container and hosted on Heroku.',
+      process:
+        'ReVitalize was built by a team of 7 engineers and 2 designers led by a project manager. My Role was Front-End Developer. It was built in 2 sprints, with each sprint lasting 2 weeks. As team we held daily stand-ups. Engineers were assigned tickets from the project manager and pair-programmed to complete tasks. We used Notion for documentation and to track tickets.'
+    }
   },
   {
     image: `${MovieBase}`,
