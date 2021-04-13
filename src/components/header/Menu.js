@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
-import { links, socials } from '../../data';
+import { links, socials } from '../../utils/menuLinks';
 
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
