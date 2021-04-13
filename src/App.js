@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './scss/main.scss';
 
-import PortfolioItem from './components/portfolio/PortfolioItem';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
+import PortfolioItem from './components/portfolio/PortfolioItem';
 
 function App() {
   return (
