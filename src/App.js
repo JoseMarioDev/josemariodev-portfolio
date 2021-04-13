@@ -10,6 +10,7 @@ import Home from './components/home/Home';
 import PortfolioItem from './components/portfolio/PortfolioItem';
 import Skills from './components/skills/Skills';
 import Portfolio from './components/portfolio/Portfolio';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/about" render={() => <About />} />
       <Route exact path="/portfolio" render={() => <Portfolio />} />
       <Route exact path="/portfolio/:id" render={() => <PortfolioItem />} />
+      <Footer />
     </Router>
   );
 }
