@@ -19,15 +19,15 @@ const PortfolioItem = (props) => {
 
           <img src={data.image} alt="item image" className="intro__img" />
         </section>
-        {/* <!-- portfolio modal links --> */}
-        <div className="modal-links">
-          <div className="modal-link ">
+
+        <div className="item-links">
+          <div className="item-link ">
             <i className="fas fa-globe"></i>
             <a className="styled__link" href={data.website}>
               {data.website}
             </a>
           </div>
-          <div className="modal-link">
+          <div className="item-link">
             <i className="fab fa-github"></i>
             <a className="styled__link" href={data.github}>
               {data.github}
@@ -35,7 +35,6 @@ const PortfolioItem = (props) => {
           </div>
         </div>
 
-        {/* <!-- / portfolio-header --> */}
         <div className="portfolio-content">
           <div className="portfolio-item-individual">
             <p className="portfolio-item__subheader">Project Purpose</p>

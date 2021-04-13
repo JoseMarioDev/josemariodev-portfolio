@@ -1,6 +1,6 @@
 import Revitalize from '../assets/portfolioItems/revitalize/revitalize.jpg';
 import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
-import Delicious from '../assets/portfolioItems/delicious/delicious.png';
+// import Delicious from '../assets/portfolioItems/delicious/delicious.png';
 
 export const items = [
   {
@@ -8,9 +8,6 @@ export const items = [
     image: `${Revitalize}`,
     title: 'ReVitalize',
     desc: 'A modern approach to building your community',
-    modalTitle: 'ReVitalize',
-    modalIntro: 'A modern approach to building your community',
-    introImg: `${Revitalize}`,
     website: 'https://revitalizecommunity.netlify.app/',
     github: 'http://www.github.com/Revitalized-Playground',
     purpose:
@@ -33,13 +30,13 @@ export const items = [
       'Moviebase was built using React, SASS, and Bootstrap for the front end. The back-end uses The Movie DB api for data. Movie information is passed from the api to the front-end using the Axios HTTP client.',
     process:
       'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
-  },
-  {
-    id: 'Delicious',
-    image: `${Delicious}`,
-    title: 'Now That is delicious',
-    desc: 'Good food, reviewed'
   }
+  // {
+  //   id: 'Delicious',
+  //   image: `${Delicious}`,
+  //   title: 'Now That is delicious',
+  //   desc: 'Good food, reviewed'
+  // }
 ];
 
 export const idHandler = (id) => {
