@@ -1,5 +1,5 @@
 import React from 'react';
-import { portfolioItems } from '../../data';
+import { items } from '../../utils/portfolioItems';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
@@ -10,7 +10,7 @@ const Portfolio = () => {
         A selection of my work
       </p>
       <div className="portfolio-items">
-        {portfolioItems.map((item) => (
+        {items.map((item) => (
           <div className="portfolio-item" key={Math.random()}>
             <img
               className="portfolio-image"

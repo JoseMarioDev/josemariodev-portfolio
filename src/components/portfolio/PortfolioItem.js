@@ -1,22 +1,10 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { portfolioItems } from '../../data';
-
-const ReVitalizeItem = portfolioItems[0];
-const MovieBaseItem = portfolioItems[1];
+import { idHandler } from '../../utils/portfolioItems';
 
 const PortfolioItem = (props) => {
-  const [data, setData] = useState({});
-
-  useEffect((id = props.match.params.id.toLowerCase()) => {
-    if (id === 'revitalize') {
-      setData(ReVitalizeItem);
-    } else if (id === 'moviebase') {
-      setData(MovieBaseItem);
-    }
-  }, []);
-  console.log('data', data);
+  const data = idHandler(props.match.params.id.toLowerCase());
 
   return (
     <>
@@ -29,7 +17,7 @@ const PortfolioItem = (props) => {
             {data.desc}
           </p>
 
-          <img src={data.image} alt="moviebase" className="intro__img" />
+          <img src={data.image} alt="item image" className="intro__img" />
         </section>
         {/* <!-- portfolio modal links --> */}
         <div className="modal-links">
