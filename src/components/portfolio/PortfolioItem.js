@@ -2,6 +2,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { idHandler } from '../../utils/portfolioItems';
+import Slideshow from './Slideshow';
 
 const PortfolioItem = (props) => {
   const data = idHandler(props.match.params.id.toLowerCase());
@@ -37,6 +38,7 @@ const PortfolioItem = (props) => {
 
         <div className="portfolio-content">
           <div className="portfolio-item-individual">
+            <Slideshow images={data.images}/>
             <p className="portfolio-item__subheader">Project Purpose</p>
             <p>{data.purpose}</p>
 

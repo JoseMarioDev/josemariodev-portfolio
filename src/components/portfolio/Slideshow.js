@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Slideshow = (props) => {
   const { images } = props;
+  console.log(images);
   const auto = true;
   const showArrows = true;
   const [state, setState] = useState({
@@ -107,6 +108,7 @@ const Slideshow = (props) => {
             ></div>
           )}
         </div>
+        <a href="../../assets/"></a>
         <Indicators currentSlide={slideIndex} />
         {showArrows ? <RenderArrows /> : null}
       </div>
