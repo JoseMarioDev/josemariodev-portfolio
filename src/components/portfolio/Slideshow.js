@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const Slideshow = (props) => {
-  const { images } = props;
-  console.log(images);
+const Slideshow = ({ images }) => {
   const auto = true;
   const showArrows = true;
   const [state, setState] = useState({
@@ -101,14 +99,11 @@ const Slideshow = (props) => {
     <>
       <div className="slider">
         <div className="slider-slides">
-          {images && images.length && slideShow && (
-            <div
-              className="slider-image"
-              style={{ backgroundImage: `url(${slideShow.url})` }}
-            ></div>
-          )}
+          <div
+            className="slider-image"
+            style={{ backgroundImage: `url(${slideShow.url})` }}
+          ></div>
         </div>
-        <a href="../../assets/"></a>
         <Indicators currentSlide={slideIndex} />
         {showArrows ? <RenderArrows /> : null}
       </div>
@@ -118,8 +113,6 @@ const Slideshow = (props) => {
 
 Slideshow.propTypes = {
   images: PropTypes.array.isRequired,
-  auto: PropTypes.bool.isRequired,
-  showArrows: PropTypes.bool.isRequired,
   currentSlide: PropTypes.number
 };
 

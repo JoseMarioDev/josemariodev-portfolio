@@ -35,6 +35,17 @@ export const items = [
     desc: 'Rediscover your favorites',
     website: 'https://www.moviebase.online',
     github: 'http://www.github.com/josemariodev/movieapp',
+    images: [
+      {
+        url: `${MovieBase}`
+      },
+      {
+        url: `${MovieBase}`
+      },
+      {
+        url: `${Delicious}`
+      }
+    ],
     purpose:
       'Moviebase is a web application where visitors can find information on their favorite movies and television shows. They can view trailers, watch previews, and read information about popular actors.',
     stack:
