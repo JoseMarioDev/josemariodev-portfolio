@@ -11,12 +11,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
         <div className="portrait"></div>
-        <a
-          href={resume}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link "
-        >
+        <a href={resume} className="nav-link ">
           RESUME
         </a>
         <ul className="social-list">

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import action from '../../assets/action.jpg';
+import resume from '../../assets/resume.pdf';
 
 const About = () => {
   return (
@@ -20,9 +21,10 @@ const About = () => {
         <p>
           I have previous&nbsp;
           <a
-            href="/Jose-Montero-resume.pdf"
+            href={resume}
             className="styled__link"
             target="_blank"
+            rel="noreferrer"
           >
             experience&nbsp;
           </a>
