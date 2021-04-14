@@ -38,7 +38,7 @@ const PortfolioItem = (props) => {
 
         <div className="portfolio-content">
           <div className="portfolio-item-individual">
-            <Slideshow images={data.images}/>
+            <Slideshow images={data.images} />
             <p className="portfolio-item__subheader">Project Purpose</p>
             <p>{data.purpose}</p>
 
