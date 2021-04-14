@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: $bs;
 }
 
 .slider-image {
@@ -14,6 +13,7 @@
   height: 25rem;
   color: #fff;
   text-align: center;
+  box-shadow: $bs;
 }
 
 .slider-nav {
