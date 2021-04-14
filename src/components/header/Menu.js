@@ -5,16 +5,19 @@ import { Link } from 'react-router-dom';
 
 import { links, socials } from '../../utils/menuLinks';
 
+import resume from '../../assets/resume.pdf';
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
         <div className="portrait"></div>
         <a
-          href="mailto:josemariodev@gmail.com"
-          className="nav-link nav-link__email"
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link "
         >
-          josemariodev@gmail.com
+          RESUME
         </a>
         <ul className="social-list">
           {socials.map((social) => (
@@ -43,6 +46,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
             </Link>
           </li>
         ))}
+        <a
+          href="mailto:josemariodev@gmail.com"
+          className="nav-link nav-link__email"
+        >
+          josemariodev@gmail.com
+        </a>
       </ul>
     </nav>
   );

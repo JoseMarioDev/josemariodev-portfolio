@@ -2,8 +2,7 @@ export const links = [
   { route: '/', name: 'Home' },
   { route: '/skills', name: 'Skills' },
   { route: '/about', name: 'About Me' },
-  { route: '/portfolio', name: 'Portfolio' },
-  { route: '/contact', name: 'Resume' }
+  { route: '/portfolio', name: 'Portfolio' }
 ];
 
 export const socials = [
