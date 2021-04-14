@@ -1,11 +1,16 @@
 import Revitalize from '../assets/portfolioItems/revitalize/revitalize.jpg';
-import Delicious from '../assets/portfolioItems/delicious/delicious.png';
+
 import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
 import mbHomepage from '../assets/portfolioItems/moviebase/mb-homepage.png';
 import mbMovies from '../assets/portfolioItems/moviebase/mb-movies.png';
 import mbMovie from '../assets/portfolioItems/moviebase/mb-movie.png';
 import mbDetails from '../assets/portfolioItems/moviebase/mb-details.png';
 import mbCicd from '../assets/portfolioItems/moviebase/mb-cicd.png';
+
+import portfolioHome from '../assets/portfolioItems/portfolio/portfolioHome.png';
+import portfolioMenu from '../assets/portfolioItems/portfolio/portfolioMenu.png';
+import portfolioProjects from '../assets/portfolioItems/portfolio/portfolioProjects.png';
+import portfolioProject from '../assets/portfolioItems/portfolio/portfolioProject.png';
 
 export const items = [
   {
@@ -23,7 +28,7 @@ export const items = [
         url: `${MovieBase}`
       },
       {
-        url: `${Delicious}`
+        url: `${Revitalize}`
       }
     ],
     purpose:
@@ -66,13 +71,35 @@ export const items = [
       'Moviebase was built using React, SASS, and Bootstrap for the front end. The back-end uses The Movie DB api for data. Movie information is passed from the api to the front-end using the Axios HTTP client.',
     process:
       'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
+  },
+  {
+    id: 'josemariodev',
+    image: `${portfolioHome}`,
+    title: 'portfolio',
+    desc: 'Learn about me and my work',
+    website: 'https://www.josemario.dev',
+    github: 'http://www.github.com/josemariodev/josemariodev-portfolio',
+    images: [
+      {
+        url: `${portfolioHome}`
+      },
+      {
+        url: `${portfolioMenu}`
+      },
+      {
+        url: `${portfolioProjects}`
+      },
+      {
+        url: `${portfolioProject}`
+      }
+    ],
+    purpose:
+      'Moviebase is a web application where visitors can find information on their favorite movies and television shows. They can view trailers, watch previews, and read information about popular actors.',
+    stack:
+      'Moviebase was built using React, SASS, and Bootstrap for the front end. The back-end uses The Movie DB api for data. Movie information is passed from the api to the front-end using the Axios HTTP client.',
+    process:
+      'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
   }
-  // {
-  //   id: 'Delicious',
-  //   image: `${Delicious}`,
-  //   title: 'Now That is delicious',
-  //   desc: 'Good food, reviewed'
-  // }
 ];
 
 export const idHandler = (id) => {
@@ -81,6 +108,8 @@ export const idHandler = (id) => {
     data = items[0];
   } else if (id === 'moviebase') {
     data = items[1];
+  } else if (id === 'josemariodev') {
+    data = items[2];
+    return data;
   }
-  return data;
 };
