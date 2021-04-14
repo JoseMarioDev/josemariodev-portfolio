@@ -1,6 +1,11 @@
 import Revitalize from '../assets/portfolioItems/revitalize/revitalize.jpg';
-import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
 import Delicious from '../assets/portfolioItems/delicious/delicious.png';
+import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
+import mbHomepage from '../assets/portfolioItems/moviebase/mb-homepage.png';
+import mbMovies from '../assets/portfolioItems/moviebase/mb-movies.png';
+import mbMovie from '../assets/portfolioItems/moviebase/mb-movie.png';
+import mbDetails from '../assets/portfolioItems/moviebase/mb-details.png';
+import mbCicd from '../assets/portfolioItems/moviebase/mb-cicd.png';
 
 export const items = [
   {
@@ -40,10 +45,19 @@ export const items = [
         url: `${MovieBase}`
       },
       {
-        url: `${MovieBase}`
+        url: `${mbHomepage}`
       },
       {
-        url: `${Delicious}`
+        url: `${mbMovies}`
+      },
+      {
+        url: `${mbMovie}`
+      },
+      {
+        url: `${mbDetails}`
+      },
+      {
+        url: `${mbCicd}`
       }
     ],
     purpose:
