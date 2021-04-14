@@ -1,6 +1,6 @@
 import Revitalize from '../assets/portfolioItems/revitalize/revitalize.jpg';
 import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
-// import Delicious from '../assets/portfolioItems/delicious/delicious.png';
+import Delicious from '../assets/portfolioItems/delicious/delicious.png';
 
 export const items = [
   {
@@ -10,6 +10,17 @@ export const items = [
     desc: 'A modern approach to building your community',
     website: 'https://revitalizecommunity.netlify.app/',
     github: 'http://www.github.com/Revitalized-Playground',
+    images: [
+      {
+        url: `${Revitalize}`
+      },
+      {
+        url: `${MovieBase}`
+      },
+      {
+        url: `${Delicious}`
+      }
+    ],
     purpose:
       'ReVitalize is a web application that connects vocational and trade students with experts in their field in order to collaborate on crowd-funded projects. Building owners can create projects that need rehabilitating. Students can view and apply to work on available projects. Visitors can browse and make donations to revitalize projects.',
     stack:
@@ -24,6 +35,17 @@ export const items = [
     desc: 'Rediscover your favorites',
     website: 'https://www.moviebase.online',
     github: 'http://www.github.com/josemariodev/movieapp',
+    images: [
+      {
+        url: `${MovieBase}`
+      },
+      {
+        url: `${MovieBase}`
+      },
+      {
+        url: `${Delicious}`
+      }
+    ],
     purpose:
       'Moviebase is a web application where visitors can find information on their favorite movies and television shows. They can view trailers, watch previews, and read information about popular actors.',
     stack:
