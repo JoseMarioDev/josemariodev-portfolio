@@ -75,7 +75,7 @@ export const items = [
   {
     id: 'josemariodev',
     image: `${portfolioHome}`,
-    title: 'portfolio',
+    title: 'Portfolio',
     desc: 'Learn about me and my work',
     website: 'https://www.josemario.dev',
     github: 'http://www.github.com/josemariodev/josemariodev-portfolio',

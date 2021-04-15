@@ -1,6 +1,6 @@
 export const skills = [
   {
-    header: 'Design',
+    header: 'Full-Stack Development',
     body:
       'I like using modern design tools to create intuitive design patterns and thoughtful interactions.',
     icons: [
@@ -19,7 +19,7 @@ export const skills = [
     ]
   },
   {
-    header: 'Front-End',
+    header: 'Cloud & DevOps',
     body:
       'I write clean, modular components using popular frameworks that are accessible across all devices.',
     icons: [
@@ -34,25 +34,6 @@ export const skills = [
       {
         icon: 'fas fa-mobile-alt',
         title: 'Responsive'
-      }
-    ]
-  },
-  {
-    header: 'Back-End',
-    body:
-      'I design databases and optimize queries. I am familiar with testing and writing documentation.',
-    icons: [
-      {
-        icon: 'fab fa-node-js',
-        title: 'NodeJS'
-      },
-      {
-        icon: 'fab fa-python',
-        title: 'Python'
-      },
-      {
-        icon: 'fab fa-git-alt',
-        title: 'Git'
       }
     ]
   },
