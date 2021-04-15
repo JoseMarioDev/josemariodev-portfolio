@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 
 import { Route, Switch, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import './scss/main.scss';
 import ScrollToTop from './utils/ScrollToTop';
@@ -40,6 +40,11 @@ const App = ({ location }) => {
       {routeArray.includes(location.pathname) && <Footer />}
     </div>
   );
+};
+
+App.propTypes = {
+  location: PropTypes.object,
+  pathname: PropTypes.string
 };
 
 export default withRouter(App);
