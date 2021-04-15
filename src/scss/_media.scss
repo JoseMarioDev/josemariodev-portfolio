@@ -16,23 +16,7 @@
     grid-template-columns: min-content max-content;
     padding-bottom: 0;
   }
-  .section__counter {
-    // outline: 1px solid blue;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: $fw-bold;
-    grid-area: counter;
-    & strong {
-      color: $clr-accent;
-    }
-    & p {
-      outline: 1px solid red;
 
-      & a {
-        outline: 1px solid red;
-      }
-    }
-  }
   .item-links {
     margin: 0 auto;
     max-width: 622px;

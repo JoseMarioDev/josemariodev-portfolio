@@ -13,7 +13,25 @@
 strong {
   font-weight: $fw-bold;
 }
+.section__counter {
+    display: grid;
+    justify-items: center;
+    font-size: 1.2rem;
+    font-weight: $fw-bold;
+    grid-area: counter;
+    & strong {
+      color: $clr-accent;
+    }
+    &--logo {
+      width: 12%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
 
+
+  
 .img-wrapper {
   width: 120%;
 }

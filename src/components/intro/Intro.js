@@ -16,13 +16,15 @@ const Intro = () => {
       <div className="section__counter">
         <p>
           My website has been visited <strong>NUM</strong> times.
+        </p>
+        <div className="section__counter--logo">
           <a href="https://aws.amazon.com/what-is-cloud-computing">
             <img
               src="https://d0.awsstatic.com/logos/powered-by-aws.png"
               alt="Powered by AWS Cloud Computing"
             />
           </a>
-        </p>
+        </div>
       </div>
     </section>
   );
