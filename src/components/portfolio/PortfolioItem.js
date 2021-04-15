@@ -8,7 +8,6 @@ import Slideshow from './Slideshow';
 
 const PortfolioItem = (props) => {
   const data = idHandler(props.match.params.id.toLowerCase());
-  console.log('dta', props);
 
   return (
     <>
