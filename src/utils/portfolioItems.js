@@ -103,7 +103,6 @@ export const items = [
 ];
 
 export const idHandler = (id) => {
-  id.toLowerCase();
   let data = {};
   if (id === 'revitalize') {
     data = items[0];
