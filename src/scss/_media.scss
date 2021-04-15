@@ -25,9 +25,12 @@
     & strong {
       color: $clr-accent;
     }
-    & a {
-      margin-left: 0.4rem;
-      font-size: 1rem;
+    & p {
+      outline: 1px solid red;
+
+      & a {
+        outline: 1px solid red;
+      }
     }
   }
   .item-links {
