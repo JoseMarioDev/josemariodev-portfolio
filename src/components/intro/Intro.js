@@ -1,5 +1,6 @@
 import React from 'react';
 import selfie from '../../assets/selfie-13.png';
+
 const Intro = () => {
   return (
     <section className="intro" id="home">
@@ -11,6 +12,19 @@ const Intro = () => {
       </p>
       <div className="img-wrapper">
         <img src={selfie} alt="Jose selfie" className="intro__img" />
+      </div>
+      <div className="section__counter">
+        <p>
+          My website has been visited <strong>NUM</strong> times.
+        </p>
+        <div className="section__counter--logo">
+          <a href="https://aws.amazon.com/what-is-cloud-computing">
+            <img
+              src="https://d0.awsstatic.com/logos/powered-by-aws.png"
+              alt="Powered by AWS Cloud Computing"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );
