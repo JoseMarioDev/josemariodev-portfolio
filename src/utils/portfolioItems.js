@@ -110,6 +110,6 @@ export const idHandler = (id) => {
     data = items[1];
   } else if (id === 'josemariodev') {
     data = items[2];
-    return data;
   }
+  return data;
 };
