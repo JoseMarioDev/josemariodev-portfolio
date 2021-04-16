@@ -14,28 +14,30 @@ strong {
   font-weight: $fw-bold;
 }
 .section__counter {
-    display: grid;
-    justify-items: center;
-    font-size: 1.2rem;
-    font-weight: $fw-bold;
-    grid-area: counter;
-    & strong {
-      color: $clr-accent;
-    }
-    &--logo {
-      width: 12%;
-      & img {
-        width: 100%;
-      }
+  display: grid;
+  justify-items: center;
+  font-size: 1.2rem;
+  font-weight: $fw-bold;
+  grid-area: counter;
+  & strong {
+    color: $clr-accent;
+  }
+  &--logo {
+    width: 12%;
+    & img {
+      width: 100%;
     }
   }
+}
 
-
-  
 .img-wrapper {
-  width: 120%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 .intro__img {
+  width: 100%;
   box-shadow: $bs;
 }
 
@@ -48,7 +50,7 @@ strong {
 // ************
 
 .section__title--intro {
-  margin-left: 3rem;
+  text-align: center;
   font-weight: $fw-reg;
 }
 .section__title--intro strong {
@@ -62,6 +64,8 @@ strong {
 
 .section__subtitle--intro,
 .section__subtitle--about {
+  text-align: center;
+  width: 100%;
   background: $clr-accent;
   padding: 0.25em 1em;
   font-family: $ff-secondary;
