@@ -14,14 +14,14 @@
   text-decoration: none;
 }
 
-.footer__link {
-  font-weight: $fw-bold;
-  text-decoration: none;
-}
-
 .footer__link:hover,
 .social-list__link:hover {
   opacity: 0.7;
+}
+.footer__link {
+  font-weight: $fw-bold;
+  color: $clr-accent;
+  text-decoration: none;
 }
 
 .footer__link:hover {

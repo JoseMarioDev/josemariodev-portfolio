@@ -93,15 +93,18 @@
     }
 
     .portrait {
-      margin-top: 6rem;
-      width: 250px;
-      height: 334px;
+      width: 175px;
+      height: 250px;
       background: url('../assets/resumeImg.png');
-
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 5px;
+
+      &:hover {
+        outline: 3px solid $clr-accent;
+        opacity: 0.95;
+      }
     }
     .social-list {
       list-style: none;
@@ -109,21 +112,6 @@
       justify-content: center;
       margin: 0.5em 0 0;
       padding: 0;
-    }
-
-    .footer__link {
-      font-weight: $fw-bold;
-      color: $clr-accent;
-      text-decoration: none;
-    }
-
-    .footer__link:hover,
-    .social-list__link:hover {
-      opacity: 0.7;
-    }
-
-    .footer__link:hover {
-      text-decoration: underline;
     }
 
     .social-list__item {
@@ -157,18 +145,20 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    // font-size: 30px;
     font-weight: $fw-bold;
     font-size: $fs-h3;
     text-transform: uppercase;
     padding: 1rem 0;
     color: set-text-color($primary-color);
     text-decoration: none;
-    // @include easeOut;
 
     &__email {
       text-transform: lowercase;
-      transition-delay: 0.5s;
+      padding: 2.5rem 0 0 0;
+    }
+    &__resume {
+      padding-bottom: 0.5rem;
+      pointer-events: none;
     }
 
     &:hover {
