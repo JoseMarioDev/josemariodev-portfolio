@@ -4,7 +4,7 @@
 
 resource "aws_s3_bucket" "josemariodev_portfolio_s3_bucket" {
   bucket        = local.prefix
-  acl           = "public-read"
+  acl           = "private"
   force_destroy = true
 
   policy = <<EOF
