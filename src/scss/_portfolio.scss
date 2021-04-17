@@ -79,6 +79,7 @@
 
 /* Individual portfolio item styles */
 .item-links {
+  text-align: center;
   padding: 0rem 0 4rem 0;
 }
 
@@ -87,6 +88,7 @@
 }
 
 .portfolio-item__subheader {
+  text-align: center;
   font-size: $fs-h3;
   font-weight: bold;
   margin-bottom: -15px;

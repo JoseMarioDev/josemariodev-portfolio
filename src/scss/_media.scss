@@ -84,6 +84,12 @@
     grid-area: img;
     position: relative;
   }
+  .slider {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 800px) {
@@ -111,6 +117,9 @@
   .skill {
     margin-bottom: none;
   }
+  .portfolio-item__subheader {
+    text-align: left;
+  }
 
   .skill + .skill {
     margin-left: 2em;
@@ -119,8 +128,18 @@
   .section__subtitle--intro {
     left: -1.5em;
   }
+  .slider-image {
+    height: 30rem;
+  }
 }
-
+@media (min-width: 1200px) {
+  .slider-image {
+    box-shadow: $bs;
+  }
+  .slider-navButton::after {
+    background: $clr-accent;
+  }
+}
 // Widescreens
 @include mediaXl {
   .projects {
