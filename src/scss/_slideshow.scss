@@ -6,13 +6,12 @@
 }
 
 .slider-image {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 30rem;
   color: #fff;
   text-align: center;
-  box-shadow: $bs;
 }
 
 .slider-nav {
@@ -35,7 +34,6 @@
   padding: 0;
 
   &::after {
-    background: $clr-accent;
     border-radius: 50%;
     content: '';
     display: block;
