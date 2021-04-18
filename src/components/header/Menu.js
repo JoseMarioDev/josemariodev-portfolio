@@ -1,30 +1,47 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
-import { links, socials } from '../../data';
+import { links, socials } from '../../utils/menuLinks';
 
-import portrait from '../../assets/selfie-10.jpg';
-
+import resume from '../../assets/resume.pdf';
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
       <div className={`menu-branding ${isMenuOpen ? 'show' : ''}`}>
-        <div className="portrait">
-          <img src={portrait} alt="Jose Mario" />
-        </div>
-        <div className="icons">
+        <a
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link nav-link__resume"
+        >
+          RESUME
+        </a>
+        <a href={resume} target="_blank" rel="noopener noreferrer">
+          <div className="portrait"></div>
+        </a>
+        <a
+          href="mailto:josemariodev@gmail.com"
+          className="nav-link nav-link__email"
+        >
+          josemariodev@gmail.com
+        </a>
+        <ul className="social-list">
           {socials.map((social) => (
-            <a
-              href={social.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={Math.random()}
-            >
-              <i className={social.className}></i>
-            </a>
+            <li key={Math.random()} className="social-list__item">
+              <a
+                className="social-list__link"
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={Math.random()}
+              >
+                <i className={social.className}></i>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
       <ul className={`menu-nav ${isMenuOpen ? 'show' : ''}`}>
         {links.map((link) => (
@@ -40,6 +57,11 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
       </ul>
     </nav>
   );
+};
+
+Menu.propTypes = {
+  toggleMenu: PropTypes.func,
+  isMenuOpen: PropTypes.bool
 };
 
 export default Menu;

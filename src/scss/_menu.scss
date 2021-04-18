@@ -1,7 +1,9 @@
 // ************
 // Menu
 // ************
-
+.menu {
+  z-index: 2;
+}
 .menu-btn {
   position: fixed;
   z-index: 80;
@@ -64,17 +66,18 @@
     height: 100vh;
     overflow: hidden;
   }
+  
 
   &-nav {
     margin: 0;
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(100%, 0, 0);
     @include easeOut;
 
     &.show {
-      // Slide in from top
+      // Slide in from right
       transform: translate3d(0, 0, 0);
     }
   }
@@ -82,45 +85,34 @@
   // Branding Side
   &-branding {
     background: $primary-color;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(-100%, 0, 0);
     @include easeOut;
 
     &.show {
-      // Slide in from bottom
+      // Slide in from left
       transform: translate3d(0, 0, 0);
     }
 
     .portrait {
-      width: 250px;
-      height: 334px;
-      background: url('../assets/selfie-10.jpg');
-
+      width: 175px;
+      height: 250px;
+      background: url('../assets/resumeImg.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 5px;
+
+      &:hover {
+        outline: 3px solid $clr-accent;
+        opacity: 0.95;
+      }
     }
     .social-list {
       list-style: none;
       display: flex;
       justify-content: center;
-      margin: 2em 0 0;
+      margin: 0.5em 0 0;
       padding: 0;
-    }
-
-    .footer__link {
-      font-weight: $fw-bold;
-      color: $clr-accent;
-      text-decoration: none;
-    }
-
-    .footer__link:hover,
-    .social-list__link:hover {
-      opacity: 0.7;
-    }
-
-    .footer__link:hover {
-      text-decoration: underline;
     }
 
     .social-list__item {
@@ -154,14 +146,21 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    // font-size: 30px;
     font-weight: $fw-bold;
     font-size: $fs-h3;
     text-transform: uppercase;
     padding: 1rem 0;
     color: set-text-color($primary-color);
     text-decoration: none;
-    // @include easeOut;
+
+    &__email {
+      text-transform: lowercase;
+      padding: 2.5rem 0 0 0;
+    }
+    &__resume {
+      padding-bottom: 0.5rem;
+      pointer-events: none;
+    }
 
     &:hover {
       color: $secondary-color;

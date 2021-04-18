@@ -1,0 +1,56 @@
+// ************
+// Skills
+// ************
+
+.my-skills {
+  background-color: $clr-dark;
+  background-image: url('../assets/skills-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url('../assets/skills-bg.jpg');
+  background-size: cover;
+
+  color: $clr-light;
+  text-align: center;
+}
+
+.section__title--skills {
+  color: $clr-accent;
+  position: relative;
+}
+
+.section__title--skills::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: $clr-light;
+  city: 0.2;
+}
+
+.skills {
+  margin-bottom: 4em;
+}
+
+.skill {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.skill-icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-icons li p {
+  margin: 0;
+}
+
+.skill-icons li {
+  margin-right: 1rem;
+}
+.skill-icons li:last-of-type {
+  margin: 0;
+}

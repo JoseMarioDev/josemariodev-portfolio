@@ -1,7 +1,10 @@
 // ************
-// About Me 
+// About Me
 // ************
 
+.section__title--about {
+  text-align: center;
+}
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -19,4 +22,3 @@
 .styled__link:hover {
   opacity: 0.7;
 }
-

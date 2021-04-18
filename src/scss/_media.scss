@@ -2,15 +2,6 @@
 // media queries
 // *******************
 
-@media (min-width: 800px) {
-  :root {
-    $fs-h1: 4.5rem;
-    $fs-h2: 3.75rem;
-    $fs-h3: 1.5rem;
-    $fs-body: 1.125rem;
-  }
-}
-
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -19,28 +10,37 @@
     grid-column-gap: 1em;
     grid-template-areas:
       'img title'
-      'img subtitle';
+      'img subtitle'
+      'img . '
+      'counter counter';
     grid-template-columns: min-content max-content;
     padding-bottom: 0;
   }
 
-  .modal-links {
+  .item-links {
     margin: 0 auto;
     max-width: 622px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
   }
-
+  .img-wrapper {
+    width: 120%;
+    grid-area: img;
+  }
   .intro__img {
     grid-area: img;
+    width: 100%;
     min-width: 250px;
     position: relative;
   }
 
   .section__title--intro {
-    /* margin-top: 1rem; */
+    outline: none;
+    text-align: left;
+    margin-left: 3rem;
   }
 
   .section__subtitle--intro {
@@ -49,31 +49,10 @@
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
+    // left: -1.5em;
     width: calc(100% + 1.5em);
   }
-}
 
-@media (min-width: 800px) {
-  .logo {
-    max-width: 6rem;
-  }
-  .services {
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .service {
-    margin-bottom: none;
-  }
-
-  .service + .service {
-    margin-left: 2em;
-  }
-}
-
-@media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -87,9 +66,11 @@
 
   .section__title--about {
     grid-area: title;
+    text-align: left;
   }
 
   .section__subtitle--about {
+    text-align: left;
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -103,8 +84,66 @@
     grid-area: img;
     position: relative;
   }
+  .slider {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 1.125rem;
+  }
+  .logo {
+    max-width: 6rem;
+  }
+  .skills {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skill {
+    margin-bottom: none;
+  }
+  .portfolio-item__subheader {
+    text-align: left;
+  }
+
+  .skill + .skill {
+    margin-left: 2em;
+  }
+
+  .section__subtitle--intro {
+    left: -1.5em;
+  }
+  .slider-image {
+    height: 30rem;
+  }
+  .error-page .error-header {
+    outline: none;
+    font-size: 15em;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-image {
+    box-shadow: $bs;
+  }
+  .slider-navButton::after {
+    background: $clr-accent;
+  }
+}
 // Widescreens
 @include mediaXl {
   .projects {
@@ -143,23 +182,28 @@
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 65vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    padding-top: 3rem;
+    justify-content: flex-start;
   }
 
   .menu-branding {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 35vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
       display: none;
-      background: url('../assets/selfie-10.jpg');
-      background-position: contain;
-      width: 150px;
-      height: 150px;
+    }
+    .nav-link__resume {
+      padding: 0;
+      pointer-events: all;
+    }
+    .nav-link__email {
+      padding-top: 1rem;
     }
   }
 
