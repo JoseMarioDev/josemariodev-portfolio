@@ -29,7 +29,7 @@ const Intro = () => {
         <div className="section__counter">
           <p>
             My website has been visited <strong>{counter.visitorCount}</strong>{' '}
-            times.
+            times
           </p>
           <div className="section__counter--logo">
             <a href="https://aws.amazon.com/what-is-cloud-computing">
