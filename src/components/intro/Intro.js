@@ -9,8 +9,7 @@ const Intro = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(`${API_KEY}`);
-
-      setCounter(res.data.Attributes.visitNum);
+      setCounter(JSON.parse(res.data.body));
     };
     fetchData();
   }, []);
@@ -26,10 +25,11 @@ const Intro = () => {
       <div className="img-wrapper">
         <img src={selfie} alt="Jose selfie" className="intro__img" />
       </div>
-      {counter > 0 && (
+      {counter.visitorCount && (
         <div className="section__counter">
           <p>
-            My website has been visited <strong>{counter}</strong> times.
+            My website has been visited <strong>{counter.visitorCount}</strong>{' '}
+            times.
           </p>
           <div className="section__counter--logo">
             <a href="https://aws.amazon.com/what-is-cloud-computing">
