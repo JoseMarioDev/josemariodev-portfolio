@@ -4,11 +4,12 @@ import axios from 'axios';
 
 const Intro = () => {
   const [counter, setCounter] = useState([]);
-  const API_KEY = process.env.REACT_APP_API_SECRET;
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get(`${API_KEY}`);
+      const res = await axios.get(
+        'https://u4ojkz3kij.execute-api.us-east-1.amazonaws.com/prod/num'
+      );
       setCounter(JSON.parse(res.data.body));
     };
     fetchData();
