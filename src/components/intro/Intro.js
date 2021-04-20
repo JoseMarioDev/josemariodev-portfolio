@@ -1,9 +1,12 @@
+/* eslint-disable multiline-ternary */
 import React, { useState, useEffect } from 'react';
 import selfie from '../../assets/selfie-13.png';
 import axios from 'axios';
+import Spinner from '../spinner/Spinner';
 
 const Intro = () => {
   const [counter, setCounter] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,6 +16,13 @@ const Intro = () => {
       setCounter(JSON.parse(res.data.body));
     };
     fetchData();
+  }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   }, []);
 
   return (
@@ -26,7 +36,9 @@ const Intro = () => {
       <div className="img-wrapper">
         <img src={selfie} alt="Jose selfie" className="intro__img" />
       </div>
-      {counter.visitorCount && (
+      {loading ? (
+        <Spinner />
+      ) : (
         <div className="section__counter">
           <p>
             My website has been visited <strong>{counter.visitorCount}</strong>{' '}
