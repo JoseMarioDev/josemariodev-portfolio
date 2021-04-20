@@ -1,7 +1,30 @@
-import React from 'react';
+/* eslint-disable multiline-ternary */
+import React, { useState, useEffect } from 'react';
 import selfie from '../../assets/selfie-13.png';
+import axios from 'axios';
+import Spinner from '../spinner/Spinner';
 
 const Intro = () => {
+  const [counter, setCounter] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get(
+        'https://u4ojkz3kij.execute-api.us-east-1.amazonaws.com/prod/num'
+      );
+      setCounter(JSON.parse(res.data.body));
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+
   return (
     <section className="intro" id="home">
       <h1 className="section__title section__title--intro">
@@ -13,19 +36,24 @@ const Intro = () => {
       <div className="img-wrapper">
         <img src={selfie} alt="Jose selfie" className="intro__img" />
       </div>
-      <div className="section__counter">
-        <p>
-          My website has been visited <strong>NUM</strong> times.
-        </p>
-        <div className="section__counter--logo">
-          <a href="https://aws.amazon.com/what-is-cloud-computing">
-            <img
-              src="https://d0.awsstatic.com/logos/powered-by-aws.png"
-              alt="Powered by AWS Cloud Computing"
-            />
-          </a>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <div className="section__counter">
+          <p>
+            My website has been visited <strong>{counter.visitorCount}</strong>{' '}
+            times
+          </p>
+          <div className="section__counter--logo">
+            <a href="https://aws.amazon.com/what-is-cloud-computing">
+              <img
+                src="https://d0.awsstatic.com/logos/powered-by-aws.png"
+                alt="Powered by AWS Cloud Computing"
+              />
+            </a>
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
