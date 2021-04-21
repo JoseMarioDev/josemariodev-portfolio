@@ -25,7 +25,7 @@ const PortfolioItem = (props) => {
           </section>
 
           <div className="item-links">
-            {data.id !== 'josemariodev' && (
+            {data.id !== 'josemario' && (
               <div className="item-link ">
                 <i className="fas fa-globe"></i>
                 <a className="styled__link" href={data.website}>

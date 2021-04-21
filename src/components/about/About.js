@@ -1,7 +1,7 @@
 import React from 'react';
 
 import action from '../../assets/action.jpg';
-import resume from '../../assets/resume.pdf';
+import resume from '../../assets/Jose-Montero-resume.pdf';
 
 const About = () => {
   return (

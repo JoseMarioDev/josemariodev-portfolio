@@ -73,11 +73,11 @@ export const items = [
       'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
   },
   {
-    id: 'josemariodev',
+    id: 'josemario',
     image: `${portfolioHome}`,
     title: 'Portfolio',
-    desc: 'Learn about me and my work',
-    website: 'https://www.josemario.dev',
+    desc: 'The tech behind this portfolio site',
+    website: 'https://www.josemario.me',
     github: 'http://www.github.com/josemariodev/josemariodev-portfolio',
     images: [
       {
@@ -108,7 +108,7 @@ export const idHandler = (id) => {
     data = items[0];
   } else if (id === 'moviebase') {
     data = items[1];
-  } else if (id === 'josemariodev') {
+  } else if (id === 'josemario') {
     data = items[2];
   }
   return data;

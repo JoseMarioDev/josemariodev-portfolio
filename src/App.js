@@ -22,7 +22,7 @@ const App = ({ location }) => {
     '/portfolio',
     '/portfolio/ReVitalize',
     '/portfolio/MovieBase',
-    '/portfolio/josemariodev'
+    '/portfolio/josemario'
   ];
   return (
     <div>
