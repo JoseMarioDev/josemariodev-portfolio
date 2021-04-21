@@ -1,7 +1,7 @@
 import React from 'react';
 
 import action from '../../assets/action.jpg';
-import resume from '../../assets/Resume4.21.21.pdf';
+import resume from '../../assets/Resume4.22.pdf';
 
 const About = () => {
   return (
@@ -13,10 +13,10 @@ const About = () => {
 
       <div className="about-me__body">
         <p>
-          I am a full-stack developer in Chicago and graduate of Lambda School.
-          I was enrolled in the web development program where I learned web
-          development and CS fundamentals by working in teams to build real
-          world projects.
+          I&apos;m an AWS Certified Professional and full-stack developer in
+          Chicago. I&apos;m also a proud graduate of Lambda School&apos;s web
+          development program where I learned modern frameworks, technologies,
+          and CS fundamentals by working in teams to build real world projects.
         </p>
         <p>
           I have previous&nbsp;

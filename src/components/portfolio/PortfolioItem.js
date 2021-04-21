@@ -13,7 +13,7 @@ const PortfolioItem = (props) => {
     <>
       {data.id ? (
         <div>
-          <section className="intro">
+          <section className="intro intro__portfolio">
             <h1 className="section__title section__title--intro">
               This is <strong>{data.id}</strong>
             </h1>
