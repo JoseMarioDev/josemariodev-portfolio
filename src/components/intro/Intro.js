@@ -10,19 +10,14 @@ const Intro = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       const res = await axios.get(
         'https://u4ojkz3kij.execute-api.us-east-1.amazonaws.com/prod/num'
       );
       setCounter(JSON.parse(res.data.body));
+      setLoading(false);
     };
     fetchData();
-  }, []);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
   }, []);
 
   return (
@@ -36,24 +31,26 @@ const Intro = () => {
       <div className="img-wrapper">
         <img src={selfie} alt="Jose selfie" className="intro__img" />
       </div>
-      {loading ? (
-        <Spinner />
-      ) : (
-        <div className="section__counter">
-          <p>
-            My website has been visited <strong>{counter.visitorCount}</strong>{' '}
-            times
-          </p>
-          <div className="section__counter--logo">
-            <a href="https://aws.amazon.com/what-is-cloud-computing">
-              <img
-                src="https://d0.awsstatic.com/logos/powered-by-aws.png"
-                alt="Powered by AWS Cloud Computing"
-              />
-            </a>
-          </div>
-        </div>
-      )}
+      <div className="section__counter">
+        {loading ? (
+          <Spinner />
+        ) : (
+          <>
+            <p>
+              My website has been visited{' '}
+              <strong>{counter.visitorCount}</strong> times
+            </p>
+            <div className="section__counter--logo">
+              <a href="https://aws.amazon.com/what-is-cloud-computing">
+                <img
+                  src="https://d0.awsstatic.com/logos/powered-by-aws.png"
+                  alt="Powered by AWS Cloud Computing"
+                />
+              </a>
+            </div>
+          </>
+        )}
+      </div>
     </section>
   );
 };
