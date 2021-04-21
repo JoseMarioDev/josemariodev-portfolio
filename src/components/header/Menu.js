@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { links, socials } from '../../utils/menuLinks';
 
-import resume from '../../assets/resume.pdf';
+import resume from '../../assets/Jose-Montero-resume.pdf';
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
