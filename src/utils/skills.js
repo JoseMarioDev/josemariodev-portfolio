@@ -21,7 +21,7 @@ export const skills = [
   {
     header: 'Cloud & DevOps',
     body:
-      'I\'m an AWS Certified Solutions Architect.  I\'m familiar with Infrastructure-as-Code, Continuous Integration/Deployment, Networking, and Virtualization',
+      "I'm an AWS Certified Solutions Architect.  I'm familiar with Infrastructure-as-Code, Continuous Integration/Deployment, Networking, and Virtualization",
     icons: [
       {
         icon: 'fab fa-aws',
