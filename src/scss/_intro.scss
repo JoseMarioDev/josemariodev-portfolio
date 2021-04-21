@@ -6,6 +6,7 @@
   padding: 0em 2em 5em 2em;
 }
 .intro {
+  min-height: 500px;
   position: relative;
   padding-bottom: 2rem;
 }
@@ -14,8 +15,10 @@ strong {
   font-weight: $fw-bold;
 }
 .section__counter {
+  height: 100px;
   display: grid;
   justify-items: center;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: $fw-bold;
   grid-area: counter;
