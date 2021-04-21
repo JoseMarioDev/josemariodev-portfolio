@@ -9,6 +9,10 @@
   min-height: 500px;
   position: relative;
   padding-bottom: 2rem;
+
+  &__portfolio {
+    min-height: auto;
+  }
 }
 
 strong {

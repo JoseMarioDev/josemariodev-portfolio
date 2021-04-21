@@ -1,4 +1,7 @@
 import Revitalize from '../assets/portfolioItems/revitalize/revitalize.jpg';
+import revDo from '../assets/portfolioItems/revitalize/revitalize-do.png';
+import revProj from '../assets/portfolioItems/revitalize/revitalize-projects.png';
+import revSpot from '../assets/portfolioItems/revitalize/revitalize-spotlight.png';
 
 import MovieBase from '../assets/portfolioItems/moviebase/moviebase.png';
 import mbHomepage from '../assets/portfolioItems/moviebase/mb-homepage.png';
@@ -41,11 +44,11 @@ export const items = [
       }
     ],
     purpose:
-      'Moviebase is a web application where visitors can find information on their favorite movies and television shows. They can view trailers, watch previews, and read information about popular actors.',
+      'Moviebase is a web application where visitors can find information on their favorite movies.  Visitors can view trailers, watch previews, and read information about cast and crew.',
     stack:
-      'Moviebase was built using React, SASS, and Bootstrap for the front end. The back-end uses The Movie DB api for data. Movie information is passed from the api to the front-end using the Axios HTTP client.',
+      'The front-end was built using ReactJS and SASS for styling.  The back-end uses The Movie DB api for data.  Moviebase utilizes several AWS Services: S3 for storage and hosting, Cloudfront as a CDN, Route 53 for domain registration, and Certificate Manager for SSL certification.',
     process:
-      'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
+      'Moviebase uses Github for version control.  Multiple branches were created for features and staging.  CircleCI was used to create pipelines for CI/CD.  The AWS resources were created using Terraform for Infrastructure-as-Code.'
   },
   {
     id: 'josemario',
@@ -69,11 +72,11 @@ export const items = [
       }
     ],
     purpose:
-      'Moviebase is a web application where visitors can find information on their favorite movies and television shows. They can view trailers, watch previews, and read information about popular actors.',
+      'This portfolio was built as part of the Cloud Resume Challenge created by Forrest Brazeal of A Cloud Guru.  The challenge is a 16 step process of building a modern resume or portfolio using modern frameworks, automation, and serverless cloud technologies.',
     stack:
-      'Moviebase was built using React, SASS, and Bootstrap for the front end. The back-end uses The Movie DB api for data. Movie information is passed from the api to the front-end using the Axios HTTP client.',
+      'The front-end for this site was built using ReactJS and SASS for styling. The site also uses several AWS Services: S3 for storage and hosting, Cloudfront as a CDN, Route 53 for domain registration, and Certificate Manager for SSL certification.  The back-end that provides the visitor counter logic was built using API Gateway, A Lambda function coded in Python, and DynamoDB to store the number of visits. ',
     process:
-      'Moviebase was a solo project and was built in a 2 weeks. I used Trello to keep track and manage project requirements and ticket items.'
+      'Github was used for version control.  Multiple branches were created for features and staging.  CircleCI was used to create pipelines for CI/CD.  The AWS resources were created using Terraform for Infrastructure-as-Code.'
   },
   {
     id: 'ReVitalize',
@@ -87,10 +90,13 @@ export const items = [
         url: `${Revitalize}`
       },
       {
-        url: `${MovieBase}`
+        url: `${revDo}`
       },
       {
-        url: `${Revitalize}`
+        url: `${revProj}`
+      },
+      {
+        url: `${revSpot}`
       }
     ],
     purpose:
