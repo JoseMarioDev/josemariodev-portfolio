@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Link } from 'react-router-dom';
-
 import { links, socials } from '../../utils/menuLinks';
+import resume from '../../assets/Resume4.21.21.pdf';
 
-import resume from '../../assets/Jose-Montero-resume.pdf';
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   return (
     <nav className={`menu ${isMenuOpen ? 'show' : ''}`}>
