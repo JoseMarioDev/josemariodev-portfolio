@@ -1,6 +1,6 @@
 ## JoseMario.me
 
-_Learn about me and my work_
+_Learn about me and how I work_
 
 <img src="./src/assets/portfolioItems/portfolio/portfolioHome.png" alt="homepage"
 width="500" height="250" />
@@ -12,12 +12,12 @@ The challenge is a 16 step process of building a modern resume or portfolio usin
 
 ### Features
 
+- Built front-end views using React and Sass with fully responsive design
 - CI/CD using CircleCI
-- Build AWS resources using Terraform
-- Deploy app to S3 bucket and distribute content using CloudFront
-- Setup linting and prettier checks
-- CSS Grid to make app mobile responsive
-- custom domain using route 53
+- Built AWS resources using Terraform:
+  - Deployed app to S3 bucket and distribute content using CloudFront
+  - custom domain using route 53
+  - Backend logic was built using API Gateway, Lambda, and DynamoDb
 
 #
 
@@ -33,4 +33,8 @@ The challenge is a 16 step process of building a modern resume or portfolio usin
 - CircleCI was used to create pipelines for CI/CD
 - The AWS resources were created using Terraform for Infrastructure-as-Code
 
-s
+#
+
+### The finished product
+
+Visit my portfolio site and see it for yourself :globe_with_meridians:&nbsp;[www.josemario.me](https://www.josemario.me)
