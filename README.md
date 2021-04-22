@@ -37,4 +37,4 @@ The challenge is a 16 step process of building a modern resume or portfolio usin
 
 ### The finished product
 
-Visit my portfolio site and see it for yourself :globe_with_meridians:&nbsp;[www.josemario.me](https://www.josemario.me)
+Visit my portfolio site and see it for yourself :globe_with_meridians:&nbsp;&nbsp;[www.josemario.me](https://www.josemario.me)
