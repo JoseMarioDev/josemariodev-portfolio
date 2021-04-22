@@ -5,7 +5,7 @@ _Learn about me and how I work_
 <img src="./src/assets/portfolioItems/portfolio/portfolioHome.png" alt="homepage"
 width="500" height="250" />
 
-This portfolio was built as part of the [Cloud Resume Challenge](www.cloudresumechallenge.dev) created by Forrest Brazeal of _A Cloud Guru_  
+This portfolio was built as part of the [Cloud Resume Challenge](https://www.cloudresumechallenge.dev) created by Forrest Brazeal of _A Cloud Guru_  
 The challenge is a 16 step process of building a modern resume or portfolio using modern frameworks, automation, and serverless cloud technologies.
 
 #
