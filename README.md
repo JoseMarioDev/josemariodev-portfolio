@@ -21,10 +21,12 @@ The challenge is a 16 step process of building a modern resume or portfolio usin
 
 #
 
-<!-- ### Architecture
+### Architecture
 
-![app architecture](src/img/app-arch.png)
- -->
+<img src="./src/assets/arch.png" alt="homepage"
+width="500" height="250" />
+
+#
 
 ### Build process
 
